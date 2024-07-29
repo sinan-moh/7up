@@ -1,0 +1,375 @@
+
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Korolev;
+    src: url(./fonts/fonnts.com-Korolev_Rounded_Heavy.otf);
+}
+@font-face {
+    font-family: korolev-light;
+    src: url(./fonts/fonnts.com-Korolev_Rounded_Light.otf);
+}
+    
+
+body{
+    font-family: "korolev-light";
+    font-weight: 200;
+    font-style: normal;
+     margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h1,h3{
+    margin: 0;
+    padding: 0;
+}
+/*navbar open*/
+nav{
+    height: 122px;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+}
+.navbar{
+    font-family: "korolev-light";
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #00ae44;
+    display: flex;
+    border-bottom:solid 1px;
+
+
+}
+.navbar .image{
+    display: block;
+    padding: 20px;
+}
+.navbar .image-m{
+    display: none;
+}
+.right-side{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 21px;
+    right: 23px;
+
+
+
+}
+.nav-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 17px;
+
+}
+.list{
+    font-size: 22px;
+    font-weight:600;
+    padding: 21px 3px 4px;
+    text-transform: uppercase;
+    
+    
+
+}
+#PRODUCTS:hover{
+    border-bottom: solid 2px;
+}
+#RECIPES:hover{
+    border-bottom: solid 2px;
+}
+#STORES:hover{
+    border-bottom: solid 2px;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+}
+/*open main body*/
+.main{
+    padding-top: 122px;
+
+}
+img{
+    vertical-align: middle;
+}
+.background{
+    display: block;
+    width: 100%;
+}
+.background-m{
+    width: 100%;
+    display: none;
+}
+.fi-rr-menu-burger{
+    left: 81%;
+    display: none;
+    position: relative;
+    font-size: 29px;
+
+}
+.content-1{
+    display:inline-block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 36%;
+    padding-left: 11%;
+    color: white;
+    
+
+}
+
+.text{
+    font-family:"korolev" ;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    font-weight: 800;
+    line-height: 74px;
+    margin-bottom: 32px;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    position: relative;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: "korolev-light";
+    color: #ffff;
+}
+
+.content-2{
+    bottom: 388px;
+    position: absolute;
+    width: 100%;
+    top:40%
+}
+.slide{
+    position: relative;
+}
+.content-text{
+    gap: 10px;
+    align-content: center;
+    display: grid; 
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 119px;
+    background: rgba(10, 91, 43, 0.8);
+    height: 203px;
+    
+
+}
+.content-text .h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   color: white;
+}
+.button-view{
+    position: relative;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: "korolev-light";
+    color: #ffff;
+}
+#footer{
+    background-color: #3e3e3e;
+    padding: 23px;
+    font-weight: bold;
+    font-size: small;
+    color: white;
+}
+#footer .footer_content{
+    text-align: center;
+}
+.footerlist{
+    text-align: center;
+    display: ruby-text;
+    color: rgb(255, 255, 255);
+}
+#footer ul li{
+    display: block;
+    padding: 0 13px;
+   
+}
+@media(max-width:768px){
+    .main{
+        padding-top: 70px;
+    }
+    nav{
+        height: 73px;
+        transition: all .3s ease-out;
+
+    }
+    .navbar .image{
+        display: none;
+        
+    }
+    .navbar .image-m{
+        display: block;
+        padding: 11px;
+    }
+    .right-side{
+        position: static;
+        display: block;  
+    }
+    .nav-list{
+        width: 100%;
+        right: 0;
+        left: 0;
+        transform: translateY(-126%);
+        transition: all .3s ease-out;
+        position: absolute;
+        top: 54px;
+        background-color: #00ae44;
+        text-align: center;
+        display: block;
+        
+    }
+    .nav-list.open{
+        transition: transform ease 0.3s;
+        transform: translateY(7%);   
+        border-bottom:2px solid; 
+    }
+    .background{
+        display: none;
+    }
+    .background-m{
+        display: block ;
+    }
+    .fi-rr-menu-burger{
+        left: 81%;
+        display: block;
+        position: relative;
+        font-size: 29px;
+        align-content: center;
+    
+    }
+    
+    .button{
+        padding: 11px 40px;
+    }
+    .content-text{
+        width: 90%;
+    }
+    .button-view{
+        padding: 11px 40px;
+    }
+
+
+}
+@media only screen and (min-width: 701px) and (max-width: 768px) {
+    .content-1 {
+    text-align: center;
+    top: 74%;
+    padding-left: 0%;
+ 
+    }
+    .text{
+        font-size: 80px;
+
+        
+    }
+    .content-2{
+        top: 38%;
+    }
+    .fi-rr-menu-burger{
+        left: 80%;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 700px) {
+    .content-1 {
+    text-align: center;
+    top: 70%;
+    padding-left: 0%;
+ 
+    }
+    .text{
+        font-size: 72px;
+        margin-bottom: 30px; 
+    }
+    .content-2{
+        top: 34%;
+    }
+    .fi-rr-menu-burger{
+        left: 76%;
+    }
+}
+@media only screen and (min-width: 477px) and (max-width: 576px) {
+    .content-1 {
+    text-align: center;
+    top: 66%;
+    padding-left: 0%;
+ 
+    }
+    .text{
+        font-size: 72px;
+        margin-bottom: 30px;
+
+    }
+    .content-2{
+        top: 30%;
+    }
+    .fi-rr-menu-burger{
+        left: 72%;
+    }
+}
+@media only screen and (min-width: 381px) and (max-width: 476px) {
+    .content-1 {
+    text-align: center;
+    top: 66%;
+    padding-left: 0%;
+ 
+    }
+    .text{
+        font-size: 58px;
+        line-height: 49px;
+        margin-bottom: 19px;
+    }
+    .content-2{
+        top: 34%;
+    }
+    .fi-rr-menu-burger{
+        left: 68%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+    .content-1 {
+    text-align: center;
+    top: 67%;
+    padding-left: 0%;
+ 
+    }
+    .text{
+        font-size: 50px;
+        line-height: 42px;
+        margin-bottom: 19px;
+    }
+    .content-2{
+        top:33%;
+    }
+    .fi-rr-menu-burger{
+        left: 64%;
+    }
+}
